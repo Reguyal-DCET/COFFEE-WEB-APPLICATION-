@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart - Bean There</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #fff8f0;
+    }
+    h1 {
+      text-align: center;
+      color: #5D4037;
+    }
+    .cart-item {
+      background: white;
+      margin: 15px auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      color: #4e342e;
+    }
+    .cart-item h3 {
+      margin-bottom: 5px;
+    }
+    .clear-cart {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #8B4513;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .clear-cart:hover {
+      background-color: #A0522D;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Cart</h1>
+  <div id="cart-container"></div>
+  <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+
+  <script>
+    function loadCart() {
+      const cartContainer = document.getElementById('cart-container');
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      if (cart.length === 0) {
+        cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+        return;
+      }
+
+      cart.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `<h3>${item.name}</h3><p>Price: ${item.price}</p>`;
+        cartContainer.appendChild(div);
+      });
+    }
+
+    function clearCart() {
+      localStorage.removeItem('cart');
+      location.reload();
+    }
+
+    document.addEventListener('DOMContentLoaded', loadCart);
+  </script>
+</body>
+</html>

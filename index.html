@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean There - Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            BEAN THERE
+        </div>
+        
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="nav-container">
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#menu">Menu</a></li> <!-- Updated link to menu section -->
+                    
+<li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="nav-icons">
+                    <a href="#" aria-label="Favorites"><i class="fas fa-heart"></i></a>
+                   <a href="cart.html" aria-label="Shopping cart" class="cart-link">
+  <i class="fas fa-shopping-cart"></i>
+  <span class="cart-count">0</span>
+</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>WELCOME TO BEAN THERE</h1>
+            <p>Lorem ipsum dolor sit amet. Aut exercitationem iure eum blanditiis dignissimos et vitae consectetur rem placeat provident! A blanditiis praesentium est officia voluptas et nulla quos id internos odio et facilis nemo. Ut accusamus voluptatem est dicta atque in maiores modi quo voluptatum maiores et dignissimos officials sit consequatur enim sed quam eaque!</p>
+            <a href="#menu" class="btn">View Menu</a> <!-- Updated to link to menu section -->
+        </div>
+    </section>
+    
+    <!-- New Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2 class="menu-title">Our Drinks Menu</h2>
+        
+        <div class="drink-categories">
+            <!-- Espresso Category -->
+            <div class="category">
+                <div class="category-header">
+                    <span>Espresso</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="drink-items">
+                    <div class="drink-item">
+  <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190410_NitroColdBrew.jpg?impolicy=" alt="Espresso" class="drink-image">
+  <h3 class="drink-name">Classic Espresso</h3>
+  <div class="drink-price">₱80.50</div>
+  <p class="drink-desc">Rich and bold single shot of our finest espresso</p>
+  <button class="add-to-cart">Add to Cart</button>
+</div>
+
+                    <div class="drink-item">
+                        <img src="https://th.bing.com/th/id/OIP.PDpxSIVdsyyUBgPEic11XwHaHa?w=184&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Double Espresso" class="drink-image">
+                        <h3 class="drink-name">Espresso Macchiato</h3>
+                        <div class="drink-price">₱70.00</div>
+                        <p class="drink-desc">Two shots of our signature espresso for extra kick</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="drink-item">
+                        <img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Americano_0.jpeg" alt="Double Espresso" class="drink-image">
+                        <h3 class="drink-name">Americano</h3>
+                        <div class="drink-price">$4.00</div>
+                        <p class="drink-desc">Espresso shots topped with hot water</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Matcha Category -->
+            <div class="category">
+                <div class="category-header">
+                    <span>Matcha</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="drink-items">
+                    
+                    <div class="drink-item">
+                        <img src="https://www.matchatop.com/wp-content/uploads/2024/03/Starbucks-Iced-Matcha-Latte.jpeg.webp" alt="Classic Matcha Latte" class="drink-image">
+                        <h3 class="drink-name">Classic Iced Matcha Latte</h3>
+                        <div class="drink-price">$5.00</div>
+                        <p class="drink-desc">Ceremonial grade matcha with steamed milk</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="drink-item">
+                        <img src="https://th.bing.com/th/id/OIP.etFNXkbPTC9U2tbfSxDnvQHaFO?w=198&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Double Espresso" class="drink-image">
+                        <h3 class="drink-name">Strawberry Matcha</h3>
+                        <div class="drink-price">109.00</div>
+                        <p class="drink-desc">Sweet strawberry puree layered with matcha</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="drink-item">
+                        <img src="https://140329508.cdn6.editmysite.com/uploads/1/4/0/3/140329508/s347941741737200035_p24_i4_w1080.png" alt="Double Espresso" class="drink-image">
+                        <h3 class="drink-name">Iced Matcha</h3>
+                        <div class="drink-price"></div>
+                        <p class="drink-desc">Refreshing cold matcha with your choice of milk</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+  <div class="category-header">
+    <span>Tea</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+  <div class="drink-items">   
+    <div class="drink-item">
+         <img src="https://th.bing.com/th/id/OIP.4P2kZpr9DyQ7jTGHzB26-AHaHa?w=190&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Double Espresso" class="drink-image">
+      <h3 class="drink-name">Earl Grey</h3>
+      <div class="drink-price">₱90.00</div>
+      <p class="drink-desc">Fragrant black tea infused with bergamot citrus</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="drink-item">
+        <div class="drink-item"></div>
+        <img src="https://th.bing.com/th/id/OIP.4P2kZpr9DyQ7jTGHzB26-AHaHa?w=190&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Double Espresso" class="drink-image">
+      <h3 class="drink-name">Chamomile Tea</h3>
+      <div class="drink-price">₱85.00</div>
+      <p class="drink-desc">Soothing caffeine-free herbal tea</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="drink-item"> 
+        <img src="https://th.bing.com/th/id/OIP.4P2kZpr9DyQ7jTGHzB26-AHaHa?w=190&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Double Espresso" class="drink-image">
+      <h3 class="drink-name">Chamomile Tea</h3>>
+      <div class="drink-price">₱95.00</div>
+      <p class="drink-desc">Classic antioxidant-rich steamed green tea</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="category">
+  <div class="category-header">
+    <span>Pastries</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+  <div class="drink-items">
+    <div class="drink-item">
+        <img src="https://th.bing.com/th/id/OIP.4P2kZpr9DyQ7jTGHzB26-AHaHa?w=190&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Double Espresso" class="drink-image">
+      <h3 class="drink-name">Chamomile Tea</h3>
+      <div class="drink-price">₱65.00</div>
+      <p class="drink-desc">Flaky, buttery classic French pastry</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="drink-item">
+         <img src="https://th.bing.com/th/id/OIP.4P2kZpr9DyQ7jTGHzB26-AHaHa?w=190&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Double Espresso" class="drink-image">
+      <h3 class="drink-name">Chocolate Muffin</h3>
+      <div class="drink-price">₱75.00</div>
+      <p class="drink-desc">Rich chocolate muffin with a gooey center</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="drink-item">
+         <img src="https://th.bing.com/th/id/OIP.4P2kZpr9DyQ7jTGHzB26-AHaHa?w=190&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Double Espresso" class="drink-image">
+      <h3 class="drink-name">Banana Bread</h3>
+      <div class="drink-price">₱70.00</div>
+      <p class="drink-desc">Moist banana bread with a touch of cinnamon</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+            
+            <!-- Add more categories as needed -->
+        </div>
+    </section>
+    
+    
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p><strong>Email:</strong> contact@beanthere.com</p>
+    <p><strong>Phone:</strong> +63 912 345 6789</p>
+    <div class="social-links">
+      <a href="https://facebook.com/beanthere" target="_blank">Facebook</a>
+      <a href="https://instagram.com/beanthere" target="_blank">Instagram</a>
+      <a href="https://twitter.com/beanthere" target="_blank">Twitter/X</a>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <h3>Feedback to our App</h3>
+    <form>
+      <input type="text" placeholder="Your Name (optional)">
+      <textarea placeholder="Your Feedback" rows="5"></textarea>
+      <button type="submit">Send Feedback</button>
+    </form>
+  </div>
+</section>
+        
+        <script src="script.js"></script>
+
+
+</body>
+</html>.  
